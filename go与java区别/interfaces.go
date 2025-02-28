@@ -2,10 +2,6 @@ package main
 
 import "fmt"
 
-type Speaker interface {
-	Speak() string
-}
-
 // 定义不同的类型
 type Cat struct {
 	Name string
