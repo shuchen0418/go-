@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+type Speaker interface {
+	Speak() string
+}
+
 // 定义不同的类型
 type Cat struct {
 	Name string
@@ -21,7 +25,7 @@ func (d Dog) Speak() string {
 	return d.Name + "汪汪汪"
 }
 
-func main() {
+func SpeakLoud() {
 
 	var s Speaker
 

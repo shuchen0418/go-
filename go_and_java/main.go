@@ -7,10 +7,6 @@ type Person struct {
 	Age  int
 }
 
-type Speaker interface {
-	Speak() string
-}
-
 func (p Person) Greet() {
 	fmt.Println("Hello my name is ", p.Name)
 }
