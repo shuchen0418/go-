@@ -4,17 +4,15 @@ import (
 	"fmt"
 )
 
-func Process1(tasks []string) {
-	for _, task := range tasks {
-		// 启动协程并发处理任务
-		go func() {
-			fmt.Printf("Worker start process task: %s\n", task)
-		}()
-	}
-}
+//defer 会在函数返回前执行 栈 先进后出
 
 func deferFunc() int {
-	fmt.Println("defer func")
+	fmt.Println("defer func0")
+	return 0
+}
+
+func deferFunc1() int {
+	fmt.Println("defer func1")
 	return 0
 }
 
@@ -26,7 +24,7 @@ func returnFunc() int {
 func returnAndDefer() int {
 
 	defer deferFunc()
-
+	defer deferFunc1()
 	return returnFunc()
 
 }
