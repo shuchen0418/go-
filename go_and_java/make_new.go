@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func a() {
 
 	// - %T : 打印值的类型
 	// - %d : 打印整数
