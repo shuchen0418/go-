@@ -11,7 +11,7 @@ func (p Person) Greet() {
 	fmt.Println("Hello my name is ", p.Name)
 }
 
-func main() {
+/* func main() {
 	p := Person{Name: "奥特曼", Age: 19}
 	p.Greet()
 
@@ -25,4 +25,4 @@ func main() {
 
 	s = dog
 	fmt.Println(s.Speak())
-}
+} */
