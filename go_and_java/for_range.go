@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 //defer 会在函数返回前执行 栈 先进后出
@@ -25,6 +26,11 @@ func returnAndDefer() int {
 
 	defer deferFunc()
 	defer deferFunc1()
+	defer func() int {
+		fmt.Println("defer func2")
+		return 10
+	}()
+	time.Sleep(1 * time.Second)
 	return returnFunc()
 
 }
