@@ -35,8 +35,8 @@ func returnAndDefer() int {
 
 }
 
-func main() {
+// func main() {
 
-	returnAndDefer()
+// 	returnAndDefer()
 
-}
+// }
