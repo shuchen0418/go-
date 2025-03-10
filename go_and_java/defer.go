@@ -99,7 +99,7 @@ func lookup(key string) int {
 	return m[key]
 }
 
-func main() {
+/* func main() {
 	// test(1)
 	// fmt.Println("return :", test1())
 	// fmt.Println("return :", test2())
@@ -108,4 +108,4 @@ func main() {
 	for _, t := range ts {
 		defer pp(t)
 	}
-}
+} */

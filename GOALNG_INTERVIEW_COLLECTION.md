@@ -1958,7 +1958,7 @@ pool.Put(obj)
     - <font style="color:rgb(36, 41, 46);">代表语言： JAVA</font>
 
 ### Go 垃圾回收机制的演变
-  
+
 **Go 的 GC 回收有三次演进过程，Go ****<font style="color:#DF2A3F;">V1.3 之前普通标记清除</font>****（mark and sweep）方法，整体过程需要启动 STW，效率极低。****<font style="color:#DF2A3F;">GoV1.5 三色标记法，堆空间启动写屏障</font>****，栈空间不启动，全部扫描之后，需要重新扫描一次栈(需要 STW)，效率普通。****<font style="color:#DF2A3F;">GoV1.8 三色标记法，混合写屏障机制</font>****：栈空间不启动（全部标记成黑色），堆空间启用写屏障，整个过程不要 STW，效率高。**
 
 #### Go 1.3 及之前
