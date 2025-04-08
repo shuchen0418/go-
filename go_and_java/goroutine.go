@@ -1,14 +1,13 @@
 package main
 
 import (
-	"fmt"
 	"sync"
 )
 
 var mu sync.Mutex
 var wg sync.WaitGroup
 
-func main() {
+/* func main() {
 
 	ch := make(chan int)
 
@@ -48,4 +47,4 @@ func main() {
 
 	wg.Wait()
 
-}
+} */
